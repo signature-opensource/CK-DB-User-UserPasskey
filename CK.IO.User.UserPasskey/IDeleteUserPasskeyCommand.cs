@@ -11,6 +11,10 @@ namespace CK.IO.User.UserPasskey;
 /// injection point of <c>CK.sUserPasskeyDelete</c> can accept others). The "last login method" rule doesn't apply to
 /// an administrator, except on its own passkeys.
 /// </para>
+/// <para>
+/// This is administration: it is not an <see cref="ICommandAuthCenter"/> (an authentication center is a login point, not
+/// an administration point). It is executed by the application's administration point.
+/// </para>
 /// </summary>
 public interface IDeleteUserPasskeyCommand : ICommand<ICrisBasicCommandResult>, ICommandCurrentCulture, ICommandAuthCritical
 {

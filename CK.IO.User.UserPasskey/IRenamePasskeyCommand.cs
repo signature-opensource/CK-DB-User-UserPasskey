@@ -4,9 +4,9 @@ using CK.Cris;
 namespace CK.IO.User.UserPasskey;
 
 /// <summary>
-/// Renames a passkey of the current user.
+/// Renames a passkey of the current user. Executed by the authentication center (<see cref="ICommandAuthCenter"/>).
 /// </summary>
-public interface IRenamePasskeyCommand : ICommand<ICrisBasicCommandResult>, ICommandCurrentCulture, ICommandAuthNormal
+public interface IRenamePasskeyCommand : ICommand<ICrisBasicCommandResult>, ICommandCurrentCulture, ICommandAuthNormal, ICommandAuthCenter
 {
     /// <summary>
     /// Gets or sets the passkey identifier. It must be one of the current user's passkeys.
