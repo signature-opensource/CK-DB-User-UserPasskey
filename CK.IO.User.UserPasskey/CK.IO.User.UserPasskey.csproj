@@ -4,6 +4,6 @@
     <Description>The passkey management commands of CK.DB.User.UserPasskey: list, rename and delete the current user's passkeys, and the administrator's delete.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CK.IO.Auth" Version="2.0.2-0.cris-auth.0.ci.6" />
+    <PackageReference Include="CK.IO.Auth" Version="2.0.2-0.cris-auth.0.ci.7" />
   </ItemGroup>
 </Project>
