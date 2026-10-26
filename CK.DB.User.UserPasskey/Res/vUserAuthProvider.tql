@@ -1,0 +1,12 @@
+-- SetupConfig: { "AddRequires": "Model.CK.UserPasskeyTable" }
+--
+-- A user has the "Passkey" scheme when it has at least one passkey. Its last use is the last use of any of them.
+--
+create transformer on CK.vUserAuthProvider
+as
+begin
+	inject "
+	union all
+	select UserId, 'Passkey', max( LastUsedTime ) from CK.tUserPasskey group by UserId
+	" after first part {select};
+end
