@@ -12,8 +12,8 @@ namespace CK.IO.User.UserPasskey;
 /// an administrator, except on its own passkeys.
 /// </para>
 /// <para>
-/// This is administration: it is not an <see cref="ICommandAuthCenter"/> (an authentication center is a login point, not
-/// an administration point). It is executed by the application's administration point.
+/// This is administration (an authentication center is a login point, not an administration point): it is executed by
+/// the application's administration point.
 /// </para>
 /// </summary>
 public interface IDeleteUserPasskeyCommand : ICommand<ICrisBasicCommandResult>, ICommandCurrentCulture, ICommandAuthCritical
