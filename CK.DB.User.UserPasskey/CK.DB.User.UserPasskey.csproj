@@ -4,7 +4,7 @@
     <Description>This package defines the tUserPasskeyHandle and tUserPasskey tables: the IPasskeyStore and the "Passkey" login provider of the passkeys (WebAuthn) verified by the authentication center.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CK.DB.Auth" Version="31.0.0-0.cris-auth.0.ci.31" />
+    <PackageReference Include="CK.DB.Auth" Version="31.0.0-0.cris-auth.0.ci.32" />
     <PackageReference Include="CK.AuthenticationInfo.Passkey" Version="15.0.0-0.cris-auth" />
   </ItemGroup>
   <ItemGroup>
