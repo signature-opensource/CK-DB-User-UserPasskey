@@ -3,7 +3,7 @@
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CK.DB.Auth" Version="31.0.0-0.uc.4.ci.147" />
+    <PackageReference Include="CK.DB.Auth" Version="31.0.0-0.uc.4.ci.148" />
     <PackageReference Include="CK.AuthenticationInfo.Passkey" Version="15.0.0-0.uc.4.ci.47" />
   </ItemGroup>
   <ItemGroup>
